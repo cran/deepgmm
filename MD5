@@ -1,12 +1,12 @@
-011b4da3867ae0b87dbd613d7cf7f76f *DESCRIPTION
+8f178553bb339e04d8ad30f78275a7fc *DESCRIPTION
 8765e61c0ac22d0d703c2189f83ebedb *NAMESPACE
 c9268a74c824a9573bf4f49c5c8ab813 *R/adjustedRandIndex.R
 9a97ec5a74b0b55987a88d150ff67271 *R/compute_est.R
 82e3a2da0c70dd30774bfc58da7e6921 *R/compute_lik.R
-6b1f52d5769baa2fe34d976d1cdc49e0 *R/deep.sem.alg.1.R
+2a01d5995564eaa49becf6c24479e5fc *R/deep.sem.alg.1.R
 9ae4dcdf13be204b731872095932f7fd *R/deep.sem.alg.2.R
 c9c69036e60e4da543077c7a32837a68 *R/deep.sem.alg.3.R
-b5f08a19a4a4f0641699e9fa4e9911b7 *R/deepgmm.R
+d77b269145eee0d145acfbaac6831d3a *R/deepgmm.R
 5561caff4ddabd52055199dbec7bf13e *R/factanal_para.R
 8d6edabd9273120ce2cd8038a0d9ebb3 *R/ginv.R
 29ebc200cbf4a59e16c6cde6768c7472 *R/initial_clustering.R

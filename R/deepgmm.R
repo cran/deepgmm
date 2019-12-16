@@ -1,15 +1,15 @@
 deepgmm <- function(y, layers, k, r,
             it = 250, eps = 0.001, init = 'kmeans', init_est = 'factanal') {
 
-  if (any(tolower(init) == c('kmeans', 'k-means', 'k')))
+  if (any(tolower(init) %in% c('kmeans', 'k-means', 'k')))
     init <- 'kmeans'
-  if (any(tolower(init) == c('random', 'r')))
+  if (any(tolower(init) %in% c('random', 'r')))
     init <- 'random'
-  if (any(tolower(init) == c('hclass', 'h')))
+  if (any(tolower(init) %in% c('hclass', 'h')))
     init <- 'hclass'
   if (any(tolower(init_est) == c('factanal', 'factana', 'fact', 'f')))
     init_est <- 'factanal'
-  if (class(y) == 'data.frame')
+  if (any(class(y) %in% 'data.frame'))
   	y <- as.matrix(y)
 
   # check arguments
