@@ -9,8 +9,9 @@
   criterion (BIC or AIC).
 }
 \usage{
-model_selection(y, layers, g, seeds = 3, it = 50, eps = 0.001,
-        init = "kmeans", init_est = "factanal", criterion = "BIC")
+model_selection(y, layers, g, seeds = sample(.Machine$integer.max, 10),
+                             it = 50, eps = 0.001, init = "kmeans",
+                             init_est = "factanal", criterion = "BIC")
 }
 \arguments{
   \item{y}{
@@ -25,7 +26,7 @@ model_selection(y, layers, g, seeds = 3, it = 50, eps = 0.001,
   The number of clusters.
 }
   \item{seeds}{
-   Numeric vector containing seeds to try.
+   Integer vector containing seeds to try.
 }
   \item{it}{
    Maximum number of EM iterations.
@@ -55,7 +56,7 @@ an object of class \code{"dgmm"} containing fitted values
 and list of BIC and AIC values.
 }
 \references{
-    Viroli, C. and McLachlan, G.J. (2019). Deep Gaussian mixture models. 
+    Viroli, C. and McLachlan, G.J. (2019). Deep Gaussian mixture models.
     Statistics and Computing 29, 43-51.
 }
 % \author{
@@ -66,14 +67,11 @@ and list of BIC and AIC values.
 % }
 \examples{
 \donttest{
-layers <- 2
-k <- c(3, 4) 
-r <- c(3, 2)
-it <- 50
-eps <- 0.001
+
 y <- scale(mtcars)
 
-sel <- model_selection(y, layers, 3, seeds = 1, it = 250, eps = 0.001)
+sel <- model_selection(y, layers = 2, g = 3, seeds = c(1, 2, 12334),
+                      it = 250, eps = 0.001, init = "kmeans", criterion = "BIC")
 sel
 
 summary(sel)

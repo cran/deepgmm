@@ -1,8 +1,8 @@
 Package: deepgmm
 Type: Package
 Title: Deep Gaussian Mixture Models
-Version: 0.1.62
-Date: 2020-10-20
+Version: 0.2.1
+Date: 2022-11-21
 Author: Cinzia Viroli, Geoffrey J. McLachlan
 Maintainer: Suren Rathnayake <surenr@gmail.com>
 Description: Deep Gaussian mixture models as proposed by Viroli and McLachlan (2019) 
@@ -12,9 +12,9 @@ Description: Deep Gaussian mixture models as proposed by Viroli and McLachlan (2
     applied at each layer by way of factor models.
 URL: https://github.com/suren-rathnayake/deepgmm
 Imports: mvtnorm, corpcor, mclust
-Suggests: testthat
 License: GPL (>= 3)
 NeedsCompilation: no
-Packaged: 2020-10-19 23:16:04 UTC; uqsratha
+Config/testthat/edition: 3
+Packaged: 2022-11-20 21:14:26 UTC; suren
 Repository: CRAN
-Date/Publication: 2020-10-20 06:00:02 UTC
+Date/Publication: 2022-11-20 21:30:02 UTC
